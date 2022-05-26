@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Аккаунт</title>
+</head>
+
+<body bgcolor="#2F4F4F">
+
+<center>
+<h1>Профиль</h1><div style=”margin-left:20px;”> Информация </div>
+    <p style="background: #FFFFFF; border:3px #000000  ridge; width: 200px; padding: 10px 0 10px 15px;  margin:20px;"><tr><tr th:each="lst : ${list}" method="post"><th>name: </th><td th:utext="${lst.name}">name</td></tr></p>
+    <p style="background: #FFFFFF; border:3px #000000  ridge; width: 200px; padding: 10px 0 10px 15px;  margin:20px;"><tr><tr th:each="lst : ${list}" method="post"><th>pass: </th><td th:utext="${lst.pass}">pass</td></tr></p>
+    <p style="background: #FFFFFF; border:3px #000000  ridge; width: 200px; padding: 10px 0 10px 15px;  margin:20px;"><tr><tr th:each="lst : ${list}" method="post"><th>mail: </th><td th:utext="${lst.mail}">mail</td></tr></p>
+    <p style="background: #FFFFFF; border:3px #000000  ridge; width: 200px; padding: 10px 0 10px 15px;  margin:20px;"><tr><tr th:each="lst : ${list}" method="post"><th>profile: </th><td th:utext="${lst.profile}">profile</td></tr></p>
+    <p style="background: #FFFFFF; border:3px #000000  ridge; width: 200px; padding: 10px 0 10px 15px;  margin:20px;"><tr><tr th:each="lst : ${list}" method="post"><th>city: </th><td th:utext="${lst.city}">city</td></tr></p>
+    <p style="background: #FFFFFF; border:3px #000000  ridge; width: 200px; padding: 10px 0 10px 15px;  margin:20px;"><tr><tr th:each="lst : ${list}" method="post"><th>birthday: </th><td th:utext="${lst.birthday}">birthday</td></tr></p>
+    <div class="text-left" >
+        <a href="/index">Выйти</a>
+    </div>
+</div>
+</center>
+</body>
+</html>

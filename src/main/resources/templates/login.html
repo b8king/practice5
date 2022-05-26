@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Авторизация</title>
+    <link rel="icon shot" type="img/jpg" href="http://dl1.cbsistatic.com/i/r/2017/02/18/246c3735-593c-4a97-9a6c-b00b8caf53e5/thumbnail/64x64/d4ae4a4cfe0fcc86c2e892a719096d95/imgingest-245949959135454160.jpg">
+    <meta charset="utf-8">
+</head>
+<body bgcolor="#2F4F4F">
+<form th:action="@{/login/profile}" th:object="${user}" method="post">
+    <center>
+        <h1>Авторизация</h1>
+        <div>
+            <input name="name"placeholder="Name"><br>
+        </div>
+        <div>
+            <input type="password" name="pass" placeholder="Password"><br>
+        </div>
+        <div>
+            <button type="submit">Войти</button><br>
+        </div>
+        </div>
+        <div class="text-left" >
+            <a style="background-color: #FFFFFF; color: #E00000F; padding: 1px" href="/index">Назад</a><br>
+        </div>
+</center>
+</form>
+</body>
+</html>
